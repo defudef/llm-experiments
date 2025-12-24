@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "accelerate>=1.12.0",
     "asyncio>=4.0.0",
     "litellm>=1.80.7",
     "matplotlib>=3.10.7",
@@ -12,6 +13,9 @@ dependencies = [
     "pandas>=2.3.3",
     "python-dotenv>=1.2.1",
     "scikit-learn>=1.7.2",
+    "torch>=2.9.1",
+    "transformers>=4.57.3",
+    "typer>=0.20.1",
     "wandb>=0.23.0",
     "weave>=0.52.20",
     "zenml>=0.92.0",
