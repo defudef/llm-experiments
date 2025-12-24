@@ -40,6 +40,8 @@ def predict():
   processor = AutoProcessor.from_pretrained(GEMMA_MODEL_ID, device_map="auto")
   model = AutoModelForCausalLM.from_pretrained(GEMMA_MODEL_ID, dtype="auto", device_map="auto")
 
+  print(f"Model loaded. Device: {model.device}")
+
   message = typer.prompt("Enter a message: ")
   
   prompt = [
