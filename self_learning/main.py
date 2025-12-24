@@ -1,11 +1,9 @@
 from os import path
-from dotenv import load_dotenv
 
 import asyncio
 
 from self_learning.game.game import Game
-
-load_dotenv()
+from self_learning.config import Config
 
 # Resolve paths relative to this script's directory
 SCRIPT_DIR = path.dirname(path.abspath(__file__))
